@@ -1,7 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en"> 
-
 <head>
   <meta charset="utf-8">
   <title>Task 2</title>
@@ -18,7 +17,6 @@
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 </head>
-
 <body>
   <!--container start-->
   <div class="container">
@@ -26,56 +24,59 @@
     <header>
       <nav>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>Plans</a></li>
-          <li><a>about</a></li>
-          <li><a>contact</a></li>
+          <li><a href="#" title="home">Home</a></li>
+          <li><a href="#" title="Plans">Plans</a></li>
+          <li><a href="#" title="about">about</a></li>
+          <li><a href="#" title="Contact">contact</a></li>
         </ul>
       </nav>
-
-      <h1>Marketing</h1>
-      <p>Templets by W3.css</p>
-      
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-      <section class="Slider">
+      <section class="banner">
+        <h1>Marketing</h1>
+      </section>
+      <section class="slider">
+        <h5>Templets by W3.css</h5>
         <div class="slide">
-          <img src="">
+          <img src="https://via.placeholder.com/350x150" alt="slide img">
+          <div class="text-on-img"><p>Text On Img</p></div>
         </div>
         <div class="slide">
-          <img src="">
+          <img src="https://via.placeholder.com/350x150" alt="slide img">
+          <div class="text-on-img"><p>Text On Img</p></div>
         </div>
         <div class="slide">
-          <img src="">
+          <img src="https://via.placeholder.com/350x150" alt="slide img">
+          <div class="text-on-img"><p>Text On Img</p></div>
         </div>
-        <div>
-          <a href="">Privious Icon</a>
+        <div class="slide-nav">
+          <a href="#" title="prvvious icon"><span>&lt;</span></a>
             <div class="act-icon">
               <div class="btn1"></div>
               <div class="btn2"></div>
               <div class="btn3"></div>
             </div>
-          <a href="">next Icon</a>
+            <a href="#" title="Next icon"><span>&gt;</span></a>
         </div>
       </section>
       <section class="offers">
         <h3>What we offers</h3>
-        <hr>
-        <div>
+        <div class="title-hr"></div>
+        <div class="offer-disc">
           <h3>Desing</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae accusamus incidunt nostrum dolor ex?</p>
         </div>
-        <div>
+        <div class="offer-disc">
           <h3>Branding</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae accusamus incidunt nostrum dolor ex?</p>
         </div>
-        <div>
+        <div class="offer-disc">
           <h3>Cunsultation</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae accusamus incidunt nostrum dolor ex?</p>
         </div>
-        <div>
+        <div class="offer-disc">
           <h3>Promises</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quae accusamus incidunt nostrum dolor ex?</p>
         </div>
@@ -84,107 +85,166 @@
         <h3>Pricing Plans</h3>
         <p>Choose a Pricing plan that first you needs.</p>
 
-        <div class="Price-card">
-          <h2>Basic</h2>
-          <p><strong>10GB</strong> Storage</p>
-          <p><strong>10</strong> Emails</p>
-          <p><strong>10</strong> Domains</p>
-          <p><strong>Endless</strong> Support</p>
-          <h1>&dollar; 10</h1>
-          <p>per month</p>
-          <div><button value="Sign UP"></button></div>
-        </div>
-
-        <div class="Price-card">
-          <h2>Pro</h2>
-          <p><strong>25GB</strong> Storage</p>
-          <p><strong>25</strong> Emails</p>
-          <p><strong>25</strong> Domains</p>
-          <p><strong>Endless</strong> Support</p>
-          <h1>&dollar; 25</h1>
-          <p>per month</p>
-          <div><button value="Sign UP"></button></div>
-        </div>
-
-        <div class="Price-card">
-          <h2>Premium</h2>
-          <p><strong>50GB</strong> Storage</p>
-          <p><strong>50</strong> Emails</p>
-          <p><strong>50</strong> Domains</p>
-          <p><strong>Endless</strong> Support</p>
-          <h1>&dollar; 50</h1>
-          <p>per month</p>
-          <div><button value="Sign UP"></button></div>
-        </div>
-
+        <ul class="price-card-list">
+          <li>
+            <ul class="price-card">
+              <li>
+                <div class="price-card-tit">
+                  <p>Basic</p>
+                </div>
+              </li>
+              <li>
+                <p><strong>10GB</strong> Storage</p>
+              </li>
+              <li>
+                <p><strong>10</strong> Emails</p>
+              </li>
+              <li>
+                <p><strong>10</strong> Domains</p>
+              </li>
+              <li>
+                <p><strong>Endless</strong> Support</p>
+              </li>
+              <li>
+                <p class="lrg-font">&dollar; 10</p>
+                <p>per month</p>
+              </li>
+              <li>
+                <div class="price-card-btn">
+                  <a href="#" title="sign up">Sign UP</a>
+                </div>
+              </li>
+              <li>
+                <div class="price-card-tit">
+                  <p>Basic</p>
+                </div>
+              </li>
+              <li>
+                <p><strong>25GB</strong> Storage</p>
+              </li>
+              <li>
+                <p><strong>25</strong> Emails</p>
+              </li>
+              <li>
+                <p><strong>25</strong> Domains</p>
+              </li>
+              <li>
+                <p><strong>Endless</strong> Support</p>
+              </li>
+              <li>
+                <p class="lrg-font">&dollar; 25</p>
+                <p>per month</p>
+              </li>
+              <li>
+                <div class="price-card-btn">
+                  <a href="#" title="sign up">Sign UP</a>
+                </div>
+              </li>
+              <li>
+                <div class="price-card-tit">
+                  <p>Basic</p>
+                </div>
+              </li>
+              <li>
+                <p><strong>50GB</strong> Storage</p>
+              </li>
+              <li>
+                <p><strong>50</strong> Emails</p>
+              </li>
+              <li>
+                <p><strong>50</strong> Domains</p>
+              </li>
+              <li>
+                <p><strong>Endless</strong> Support</p>
+              </li>
+              <li>
+                <p class="lrg-font">&dollar; 50</p>
+                <p>per month</p>
+              </li>
+              <li>
+                <div class="price-card-btn">
+                  <a href="#" title="sign up">Sign UP</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
       <section class="about">
         <h3>Who We Are</h3>
-        <hr>
-
+        <div class="title-hr"></div>
         <div class="about-card">
-          <img src="">
-          <h1>John Doe</h1>
+          <img src="https://via.placeholder.com/140x100" alt="Profile pic">
+          <h4>John Doe</h4>
           <p>Art Director</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellat voluptatibus quo suscipit deleniti accusamus.</p>
-
-          <button Value="Contact"></button>
+          <div class="about-card-btn">
+            <a href="#" title="Contact">Contact</a>
+          </div>
         </div>
         <div class="about-card">
-          <img src="">
-          <h1>John Doe</h1>
+          <img src="https://via.placeholder.com/140x100" alt="Profile pic">
+          <h4>John Doe</h4>
           <p>Art Director</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellat voluptatibus quo suscipit deleniti accusamus.</p>
-
-          <button Value="Contact"></button>
+          <div class="about-card-btn">
+            <a href="#" title="Contact">Contact</a>
+          </div>
         </div>
         <div class="about-card">
-          <img src="">
-          <h1>John Doe</h1>
+          <img src="https://via.placeholder.com/140x100" alt="Profile pic">
+          <h4>John Doe</h4>
           <p>Art Director</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellat voluptatibus quo suscipit deleniti accusamus.</p>
-
-          <button Value="Contact"></button>
+          <div class="about-card-btn">
+            <a href="#" title="Contact">Contact</a>
+          </div>
         </div>
-
       </section>
       <section class="contact">
         <h3>Contact Us</h3>
-        <hr>
-
-        <form>
-          <label>Name</label>
-          <input type="text">
-          <label>Email</label>
-          <input type="Email">
-          <label>Subject</label>
-          <input type="text">
-          <label>Message</label>
-          <input type="text">
-
-          <button type="submit" value="send"></button>
-        </form>
+        <div class="title-hr"></div>
+        <div class="form-contener">
+          <form>
+            <div class="form-inputs">
+              <label>Name</label>
+              <input type="text">
+            </div>
+            <div class="form-inputs">
+              <label>Email</label>
+              <input type="Email">
+            </div>
+            <div class="form-inputs">
+              <label>Subject</label>
+              <input type="text">
+            </div>
+            <div class="form-inputs">
+              <label>Message</label>
+              <input type="text">
+            </div>
+            <div class="form-sub-btn">
+              <button type="submit" value="send"></button>
+            </div>
+          </form>
+        </div>
       </section>
-      
     </main>
     <!--main section end-->
-
     <!--footer section start-->
     <footer>      
-      <h4>Footer</h4>
-
-      <a href=""> Up Icon To the top</a>
-
-      <p>
-        Multiple icons....
-      </p>
-
+      <h2>Footer</h2>
+      <a href="#" title="back to top"><span>UpIcon</span></a>
+      <ul>
+        <li><a href="#" title="social icon"><span>fb</span></a></li>
+        <li><a href="#" title="social icon"><span>insta</span></a></li>
+        <li><a href="#" title="social icon"><span>SnapChat</span></a></li>
+        <li><a href="#" title="social icon"><span>pin</span></a></li>
+        <li><a href="#" title="social icon"><span>tweet</span></a></li>
+        <li><a href="#" title="social icon"><span>in</span></a></li>
+      </ul>
       <p>Powerd by w3.css</p>
-
-
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
   <script src="assets/js/script.js"></script>
